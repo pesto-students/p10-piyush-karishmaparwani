@@ -1,0 +1,165 @@
+.container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-flow: row;
+}
+
+.squareRed {
+    width: 6em;
+    height: 6em;
+    background-color: red;
+}
+
+.squareBlue {
+    width: 6em;
+    height: 6em;
+    background-color: blue;
+}
+
+.squareYellow {
+    width: 6em;
+    height: 6em;
+    background-color: yellow;
+}
+
+.squareGreen {
+    width: 6em;
+    height: 6em;
+    background-color: green;
+}
+
+/*  */
+.container :hover .squareBlue{
+    animation: rotate;
+    animation-duration: 12s; 
+}
+.container :hover .squareRed{
+
+
+    animation: rotate;
+    animation-duration: 12s; 
+}
+
+.container :hover .squareYellow{
+
+
+    animation: rotate2;
+    animation-duration: 12s; 
+}
+
+.container :hover .squareGreen{
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    transition-timing-function:ease-in-out ;
+    transition-duration: 5s;
+    
+
+
+    /* animation: rotate2;
+    animation-duration: 12s;  */
+}
+
+@keyframes rotate {
+    to{
+    transform: rotate(90deg);
+
+    transform-origin: 0 0;
+    transition-timing-function:ease-in-out ;
+    transition-duration: 5s;}
+}
+
+@keyframes rotate2 {
+    to{
+    transform: rotate(-90deg);
+
+    transform-origin: top right;
+    transition-timing-function:ease-in-out ;
+    transition-duration: 5s;}
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-flow: row;
+}
+
+.squareRed {
+    width: 6em;
+    height: 6em;
+    background-color: red;
+
+}
+
+.squareBlue {
+    width: 6em;
+    height: 6em;
+    background-color: blue;
+}
+
+.squareYellow {
+    width: 6em;
+    height: 6em;
+    background-color: yellow;
+}
+
+.squareGreen {
+    width: 6em;
+    height: 6em;
+    background-color: green;
+}
+
+/*  */
+.container:hover .squareBlue{
+    animation: rotate;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.container:hover .squareRed{
+
+
+    animation-name: rotate;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.container:hover .squareYellow{
+
+
+    animation-name: rotate2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.container:hover .squareGreen{
+
+
+    animation-name: rotate2;
+    animation-duration: 2s; 
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    to{
+    transform: rotate(90deg);
+
+    transform-origin: 0 0;
+   }
+}
+
+@keyframes rotate2 {
+    to{
+    transform: rotate(-90deg);
+
+    transform-origin: top right;
+    transition-timing-function:ease-in-out ;}
+}
