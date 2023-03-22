@@ -13,6 +13,17 @@ header {
     justify-content: center;
     padding: 2em;
     text-align: center;
+    flex-flow: column;
+    background-color: khaki;
+}
+
+section {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 1px;
 }
 
 .container {
@@ -28,6 +39,7 @@ header {
 
 footer {
     display: flex;
+    justify-content: center;
 }
 
 article {
@@ -36,6 +48,9 @@ article {
 
 .form {
     display: flex;
+    background-color: antiquewhite;
+    padding: 1em;
+    justify-content: center;
 }
 
 #image {
@@ -58,10 +73,10 @@ form {
 }
 
 .form-control {
-    padding: 1em;
+    padding: 0.5em;
 }
 
-input:hover[type="submit"] {
+input:hover [type="submit"] {
     color: white;
     background-color: blue;
 }
@@ -70,4 +85,8 @@ input:hover[type="submit"] {
     .container {
         flex-direction: column;
     }
+}
+
+img {
+    width: 20em;
 }
