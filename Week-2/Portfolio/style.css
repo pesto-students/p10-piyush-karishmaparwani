@@ -1,0 +1,50 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 10px 100px rgba(0,0,0,.1);
+
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+.header_profile{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+}
+
+.profile_image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 1.5rem;
+    background: #facf0f;
+}
+
+.nav {
+    display: flex;
+}
+
+.navUl {
+    display: flex;
+    list-style: none;
+
+}
+
+.navLi {
+    padding: 1em;
+}
